@@ -3,7 +3,7 @@
 unsigned int regStat = 0;
 
 unsigned int regCalc(int cmnd) {
-  if(cmnd >= 1 && cmnd <= 16) {
+  if(cmnd >= 1 & cmnd <= 16) {
     if (!(regStat & 1<<(cmnd - 1))) {regStat += 1<<(cmnd - 1);}
   } 
   else if (cmnd <= -1 && cmnd >= -16) {
